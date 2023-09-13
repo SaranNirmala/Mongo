@@ -1,0 +1,47 @@
+MongoDB- the word drived from Humongous(Meaning-Big size) 
+MongoDB - It's a collection of documents(JSON) -(it can be stored as a BSON structure)
+
+difference between MongoDB and Mysql 
+
+Sql-should be maintain the data as structured (should follow schema- )
+ The schema can not be changed. The inputs following the given schema are only entered.
+each individual records are stored as ‘rows’ in a table.
+*Normalization - Normalization is the process to eliminate data redundancy and enhance data integrity in the table
+Redundancy in DBMS is having several copies of the same data in the database.
+
+NoSql - No forced schema and no normalization
+each individual records are stored as ‘documents’. -It has a dynamic schema
+nosql- 
+
+optional - Suppose our data is stored in a another directory like (D, E). we have to set the path before run the MongoDB
+(Shell) cmd -> mongod --dbpath="" (you have to enter the path in the " ")
+
+console clear- cntrl+L
+
+Next Line - Cntrl+enter
+
+Cursor - 
+
+db.employee.find({filter}, {projection}, {Query})
+
+Query Operators 
+        Comparision Operator
+        Logical Operators
+        Evaluation Operator
+
+$regex uses “Perl Compatible Regular Expressions” (PCRE) as the matching engine.
+
+
+
+Aggregation :
+
+Aggregation is the process of selecting data from a collection to process multiple documents and returns computed results
+  * group values from multiple documents together
+  * Fetching a lot of nested data to perform complex Operations
+  * Filter and sort documents and analyze data changes
+
+Stages:
+$match
+$group
+$sort
+$project
